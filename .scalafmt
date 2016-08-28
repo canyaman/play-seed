@@ -1,0 +1,5 @@
+# .scalafmt, comments are supported.
+# Read more from https://olafurpg.github.io/scalafmt/#SBT
+--style defaultWithAlign # For pretty alignment.
+# --style IntelliJ
+--maxColumn 100            # For my wide 22" display.
