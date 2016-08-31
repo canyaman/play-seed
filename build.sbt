@@ -2,6 +2,8 @@ name := """play-seed"""
 
 version := "1.0-SNAPSHOT"
 
+updateOptions := updateOptions.value.withCachedResolution(true)
+
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.11.8"
@@ -27,4 +29,3 @@ libraryDependencies ++= Seq(
   "com.google.protobuf" % "protobuf-java" % "2.6.1",
   "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
 )
-
